@@ -7,8 +7,8 @@ function Index() {
         <hr />
         <div>
           <div className="row">
-            <div className="col-md-7 about_links">
-              <div className="mb-3">
+            <div className="col-md-7 about_links mt-2">
+              <div className="mb-2">
                 <h5 className="mb-0"> About </h5>
               </div>
               <p>
@@ -27,8 +27,8 @@ function Index() {
                 </a>
               </p>
             </div>
-            <div className="col-md-5 about_links">
-              <div className="mb-3">
+            <div className="col-md-5  about_links mt-2">
+              <div className="mb-2">
                 <h5 className="mb-0"> Data Source </h5>
               </div>
               <p>

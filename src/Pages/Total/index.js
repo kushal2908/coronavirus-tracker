@@ -34,7 +34,7 @@ export default function Index() {
         </div>
         <div className="row">
           <div className="col-md-4">
-            <div className="card shadow" style={{ borderLeft: "10px solid #ff4757" }}>
+            <div className="card shadow" style={{ borderBottom: "10px solid #ff4757" }}>
               <div className="card-body text-center">
                 <h2 style={{ color: "#ff4757" }}>{death.toLocaleString("en-IN")}</h2>
                 <h5>Deaths</h5>
@@ -42,7 +42,7 @@ export default function Index() {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="card shadow" style={{ borderLeft: "10px solid #ffa502" }}>
+            <div className="card shadow" style={{ borderBottom: "10px solid #ffa502" }}>
               <div className="card-body text-center">
                 <h2 style={{ color: "#ffa502" }}>{confirm.toLocaleString("en-IN")}</h2>
                 <h5>Confirm</h5>
@@ -50,7 +50,7 @@ export default function Index() {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="card shadow" style={{ borderLeft: "10px solid #2ed573" }}>
+            <div className="card shadow" style={{ borderBottom: "10px solid #2ed573" }}>
               <div className="card-body text-center">
                 <h2 style={{ color: "#2ed573" }}>{recover.toLocaleString("en-IN")}</h2>
                 <h5> Recovered</h5>
