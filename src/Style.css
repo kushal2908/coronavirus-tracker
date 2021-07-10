@@ -11,7 +11,23 @@ body {
 .card {
   border-radius: 10px !important;
   background-color: rgb(73, 79, 94);
-  margin-bottom: 24px !important;
+}
+
+.card__confirm {
+  background-color: #c06b21;
+  border-radius: 6px !important;
+  margin-bottom: 20px !important;
+}
+.card__death {
+  background-color: #c0392b;
+  border-radius: 6px !important;
+  margin-bottom: 20px !important;
+}
+
+.card__recovered {
+  background-color: #1c9950;
+  border-radius: 6px !important;
+  margin-bottom: 20px !important;
 }
 
 .stat__heading,

@@ -43,29 +43,53 @@ export default function Index() {
     <div>
       <div className="container mt-4">
         <div className="stat__heading mb-3">
-          <h2 className="mb-0">Today</h2>
+          <h2 className="mb-0">Last 24 Hours</h2>
         </div>
         <div className="row">
           <div className="col-md-4">
-            <div className="card shadow" style={{ borderBottom: "10px solid #ff4757" }}>
+            <div className="card__death shadow">
               <div className="card-body text-center">
-                <h2 style={{ color: "#ff4757" }}>{(death - prevDeath).toLocaleString("en-IN")}</h2>
+                <h2>
+                  {death - prevDeath === 0 ? (
+                    <p className="mb-0" style={{ fontSize: "12px" }}>
+                      Data has not been updated yet
+                    </p>
+                  ) : (
+                    (death - prevDeath).toLocaleString("en-IN")
+                  )}
+                </h2>
                 <h5>Deaths</h5>
               </div>
             </div>
           </div>
           <div className="col-md-4">
-            <div className="card shadow" style={{ borderBottom: "10px solid #ffa502" }}>
+            <div className="card__confirm shadow">
               <div className="card-body text-center">
-                <h2 style={{ color: "#ffa502" }}>{(confirm - prevConfirm).toLocaleString("en-IN")}</h2>
+                <h2>
+                  {confirm - prevConfirm === 0 ? (
+                    <p className="mb-0" style={{ fontSize: "12px" }}>
+                      Data has not been updated yet
+                    </p>
+                  ) : (
+                    (confirm - prevConfirm).toLocaleString("en-IN")
+                  )}
+                </h2>
                 <h5>Confirm</h5>
               </div>
             </div>
           </div>
           <div className="col-md-4">
-            <div className="card shadow" style={{ borderBottom: "10px solid #2ed573" }}>
+            <div className="card__recovered shadow">
               <div className="card-body text-center">
-                <h2 style={{ color: "#2ed573" }}>{(recover - prevRecover).toLocaleString("en-IN")}</h2>
+                <h2>
+                  {recover - prevRecover === 0 ? (
+                    <p className="mb-0" style={{ fontSize: "12px" }}>
+                      Data has not been updated yet
+                    </p>
+                  ) : (
+                    (recover - prevRecover).toLocaleString("en-IN")
+                  )}
+                </h2>
                 <h5> Recovered</h5>
               </div>
             </div>
